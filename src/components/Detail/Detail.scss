@@ -1,0 +1,53 @@
+.links-nav {
+  a {
+    position: relative;
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 0;
+      background-color: white;
+      transition: .3s;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.pokemon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    height: 250px;
+  }
+
+  .pokemon-infos {
+    background-color: rgb(198, 198, 198);
+    padding: 30px 50px;
+    color: #021939;
+    border-radius: 15px;
+    margin-left: 20px;
+  }
+}
+
+.list-type {
+    span {
+      &:last-child {
+        .slash {
+          display: none;
+        }
+      }
+    }
+  }
